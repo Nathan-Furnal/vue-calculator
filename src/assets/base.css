@@ -1,0 +1,30 @@
+.m-2{
+  margin: 2rem;
+}
+
+.m-4{
+  margin: 4rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.reader {
+  text-align: right;
+  width: 600px;
+  overflow-x: auto;
+}
+
+.buttons {
+  width: 600px;
+  display: grid;
+}
