@@ -20,11 +20,15 @@
 
 .reader {
   text-align: right;
-  width: 600px;
+  width: 700px;
+  height: 70px;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
-.buttons {
-  width: 600px;
+.machine-buttons {
+  width: fit-content;
   display: grid;
+  text-align: left;
+  grid-template-columns: 150px 150px 150px 150px;
 }
