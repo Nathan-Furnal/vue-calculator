@@ -1,29 +1,29 @@
-type Operator = '+' | '-' | 'x' | '÷';
-type UnaryOperator =  Extract<Operator, '+' | '-'>;
+type Operator = "+" | "-" | "x" | "÷";
+type UnaryOperator = Extract<Operator, "+" | "-">;
 
-const isNumber = (s: string): boolean => {return !isNaN(Number(s))}
+const isNumber = (s: string): boolean => {
+  return !isNaN(Number(s));
+};
 
-interface Op{
-    operator: Operator;
-    next?: Op;
+interface Op {
+  operator: Operator;
+  next?: Op;
 }
 
 interface UnaryOp extends Op {
-    operator: UnaryOperator;
-    operand: string;
+  operator: UnaryOperator;
+  operand: string;
 }
-interface BinaryOp extends Op{
-    leftOperand: string;
-    rightOperand: string;
+interface BinaryOp extends Op {
+  leftOperand: string;
+  rightOperand: string;
 }
-
 
 class MathParser {
-    text: string;
-    operations: Op[] = [];
+  text: string;
+  operations: Op[] = [];
 
-    constructor(text: string){
-        this.text = text;
-    }
+  constructor(text: string) {
+    this.text = text;
+  }
 }
-
